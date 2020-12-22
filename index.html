@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="js/count_record.js"></script>
+    <script src="js/ColChart.js"></script>
+    <script src="js/record.js"></script>
+    <script src="js/PieChart.js"></script>
+    <script src="js/upload.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>PPDEBUG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="PPDEBUG" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="img/favico.ico">
+
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <!-- Animated Background --->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="img/main_photo.jpg" alt="未命名" id="AVATOR">
+              </div>
+              <div class="header-titles">
+                <h2 id = "user-home">debugger</h2>
+                <h4>Tongji University</h4>
+              </div>
+            </div>
+
+            <ul class="main-menu">
+              <li class="active">
+              <a href="#home" class="nav-anim">
+                <span class="menu-icon lnr lnr-home"></span>
+                <span class="link-text">欢迎页面</span>
+              </a>
+              </li>
+              <li>
+                <a href="#information" class="nav-anim">
+                  <span class="menu-icon lnr lnr-user"></span>
+                  <span class="link-text">个人信息</span>
+                </a>
+              </li>
+              <li>
+                <a href="#practices" class="nav-anim">s
+                  <span class="menu-icon lnr lnr-chart-bars"></span>
+                  <span class="link-text">提交记录</span>
+                </a>
+              </li>
+              
+            </ul>
+
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+              <!-- Home Subpage -->
+              <section data-id="home" class="animated-section start-page">
+                <div class="section-content vcentered">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="title-block">
+                          <img style="position: relative; left: 43.5%;" src="img/logo.png" height="100px" width="100px">
+                          <div class="owl-carousel text-rotation">                                    
+                            <div class="item">
+                              <div class="sp-subtitle">PPDebug</div>
+                            </div>
+
+                            <div class="item">
+                              <div class="sp-subtitle">拍一拍，告别所有bug</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </section>
+              <!-- End of Home Subpage -->
+
+              <!-- Information Subpage-->
+              <section data-id="information" class="animated-section">
+                <div class="page-title">
+                  <h2>个人信息</h2>
+                </div>
+                  <h7><a href="#edit" class="nav-anim">编辑</a></h7>
+                <div class="section-content">
+                  <!-- Personal Information -->
+                  <div class="row">
+                    <script>
+
+                    </script>
+                      <div class="fun-fact gray-default">
+                      &nbsp;
+                          <font size="5" face="Verdana" color="#efb6f1">
+                          ID
+                          </font>
+                          &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="fun-fact-block-value" id="ID">1951234</span>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                    
+                      <div class="fun-fact gray-default">
+                        <font size="5" face="Verdana" color="#efb6f1">
+                          性别
+                          </font>
+                        
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="fun-fact-block-value" id="GENDER">男</span>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                    
+                      <div class="fun-fact gray-default">
+                        <font size="5" face="Verdana" color="#efb6f1">
+                          昵称
+                          </font>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="fun-fact-block-value" id="NAME">debugger</span>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                    
+                      <div class="fun-fact gray-default">
+                        <font size="5" face="Verdana" color="#efb6f1">
+                          邮箱
+                          </font>
+                
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="fun-fact-block-value" id="NAME">debugger</span>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                    
+                      <div class="fun-fact gray-default">
+                        <font size="5" face="Verdana" color="#efb6f1">
+                          &nbsp;qq
+                          </font>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <span class="fun-fact-block-value" id="QQ">123456</span>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                    
+                      <div class="fun-fact gray-default">
+                        <font size="5" face="Verdana" color="#efb6f1">
+                          电话
+                          </font>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="fun-fact-block-value" id="PHONE">123456789012</span>
+                        
+                      </div>
+                    </div>
+                    
+
+                 
+                  <!-- End of Personal Information -->
+
+                  <div class="white-space-50"></div>
+                </div>
+              </section>
+              <!-- End of Information Subpage-->
+
+              <!-- Practices Subpage-->
+              <section data-id="practices" class="animated-section start-page">
+                <script>
+                  var res = get_record();
+                </script>
+                <div class="page-title">
+                  <h2>历史记录</h2>
+                </div>
+
+                <div class="section-content">
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      
+                      <!-- 提交记录-->
+
+                      <div class="block-title">
+                        <h3>总提交记录</h3>
+                      </div>
+                        <div id="record" class="timeline timeline-second-style clearfix">
+                          
+
+                          
+                          <div id="record" class="timeline timeline-second-style clearfix">
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.12.12</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 class="item-period">2020.12.09</h5>
+                                <span class="item-company">对拍</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <h4 class="item-title">Pro 1235: 哈希表</h4>
+                                <!--Result-->
+                                <ul class="knowledges">
+                                  <wa>Found</wa>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.12.03</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ce>Complation Error</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.12.01</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.11.08</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.10.28</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.10.27</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.10.26</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.10.23</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.10.20</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                            <div class="timeline-item clearfix">
+                              <div class="left-part">
+                                <h5 id ="d" class="item-period">2020.10.17</h5>
+                                <span id = "opt" class="item-company">自测</span>
+                              </div>
+                              <div class="divider"></div>
+                              <div class="right-part">
+                                <!--Result-->
+                                <ul id = "res" class="knowledges">
+                                  <ac>Passed</ac>
+                                </ul>
+                              </div>
+                            </div>
+  
+                              
+                            </div>
+                          </div>
+
+                          <script>
+                            window.onload=get_record();
+                          </script>
+                    </div>
+
+                    
+
+                    <div class="col-xs-12 col-sm-6">
+                      <!-- 结果统计 -->
+                      <script>
+                        
+                      </script>
+                        <div class="fun-fact gray-default">
+                          <div id="self" style="min-width:300px;height:300px" data-highcharts-chart="0">
+                            </div>
+                            <script>
+                              PieChart("self", 9, 0, 1, "自测记录");
+                            </script>
+                        </div>
+
+                        <div class="fun-fact gray-default">
+                          <div id="pai" style="min-width:300px;height:300px" data-highcharts-chart="1"></div>
+                            <script>
+                              PieChart("pai", 0, 1, 0, "对拍记录");
+                            </script>
+                        </div>
+
+
+                    </div>
+          
+                  </div>
+
+                  <div class="white-space-50"></div>
+
+                  <div class="row">
+                    <div class="fun-fact gray-default">
+                      <div id="col" style="min-width:500px;height:300px" data-highcharts-chart="2">
+                        </div>
+                        <script>
+                          ColChart(["十二月", "一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月"], [0, 0, 0, 0, 1, 2, 3, 6, 10, 20, 20, 21]);
+                        </script>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- End of Practice Subpage-->
+
+              <!-- Edit Subpage-->
+              <section data-id="edit" class="animated-section">
+                <div class="page-title">
+                  <h2 >编辑个人信息</h2>
+                </div>
+                <!-- Contact Form -->    
+                <div class="controls two-columns">
+                  <form>
+                  <div class="right-column">   
+
+                    <img id="preview_img" src="img/main_photo.jpg" alt="" class="img-rounded" style="border-radius:500px; width:150px;height:150px;">
+                    <br>
+                    </br>
+                    <input class="button btn-send" type="file" value="用户名" style="width:240px" id="avatar" name="avatar"
+                        onchange="mypit()">
+                
+                    <script>
+                　　　　// 封装获取元素的方法
+                        let $ = (elem) => { return document.querySelector(elem) };
+                　　　　
+                        function mypit() {
+                　　　    //  初始值
+                            var url = '';
+                            //获取forms中的文件，并赋值给url，每次调用URL.crreateObjectURl方法时，都会创建一个对象。
+                            url = window.URL.createObjectURL($("#avatar").files[0]);
+                            //获取img标签对象的src，并将url赋值给img标签的src属性，这是完成打印的一步。
+                            $("#preview_img").src = url;
+                            //$("#preview_img0").src = url;
+                        }
+                    </script>
+                </div>
+ 
+                    <div class="fields clearfix">
+                      
+                      <div class="left-column">
+                
+                        &nbsp;&nbsp;
+                        <b> id
+                        </b>
+                        <div class="form-group form-group-with-icon">
+                        </p><h3 id="display_username"> 1952533 </h3>
+                        </div>
+                
+                        
+                        <div class="form-group form-group-with-icon">
+                          <input id="username" type="string" name="username" class="form-control" placeholder=""
+                            maxlength="64" required="required"/>
+                          <label>昵称</label>
+                        </div>
+                
+                
+                        <div class="form-group form-group-with-icon">
+                         
+                          <input id="newPassword" type="password" class="form-control" placeholder="" maxlength="32"/>
+                          <label>新密码</label>
+                        </div>
+                
+                        <div class="form-group form-group-with-icon">
+                          
+                          <input id="repeatPassword" type="password" class="form-control" placeholder="" maxlength="32" onkeyup="validate()"/><span id="tip"></span></p>
+                          <label>确认密码</label>
+                        </div>
+                
+                        
+                        <div class="form-group form-group-with-icon">
+                          <input id="phone" type="text" name="phone" class="form-control" placeholder=""
+                           oninput = "value=value.replace(/[^\d]/g,'')" maxlength="11" minlength="11" required="required"  
+                          />
+                          <label>电话</label>             
+                        </div>
+                
+                        <div class="form-group form-group-with-icon">
+                          <input id="qq" type="string" name="qq" class="form-control" placeholder=""  minlength="6" maxlength="11" required="required" />
+                          <label>qq</label>   
+                        </div>
+                
+                        <div class="form-group form-group-with-icon">
+                          <select id="gender" class="form-control" required="required" >
+                              <option value ="Male">男</option>
+                              <option value ="Female">女</option>
+                              <option value ="Other">其他</option>
+                              <option value ="Secret">保密</option>
+                          </select>
+                          <label>性别</label>   
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+                    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                  <input type="submit" class="button btn-send" value="提交" id="submit"/>
+                  &nbsp;&nbsp;
+                  <input type="reset" class="button btn-send" value="重置" id="reset"/>
+                  </form>
+                  
+                  <script>
+                    function validate() {
+                    var pw1 = document.getElementById("newPassword").value;
+                    var pw2 = document.getElementById("repeatPassword").value;
+                    if(pw1 == pw2) {
+                    document.getElementById("tip").innerHTML="<font color='green'> </font>";
+                    document.getElementById("submit").disabled = false;
+                    }
+                    else {
+                    document.getElementById("tip").innerHTML="<font color='purple'>两次密码不相同</font>";
+                    document.getElementById("submit").disabled = true;
+                    }
+                    }
+                  </script>
+                
+                  <!-- End of Contact Form -->
+                </div>
+    
+            
+              </section>
+              <!-- End of Edit Subpage-->
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+    <script src='js/perfect-scrollbar.min.js'></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="http://www.google.cn/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
